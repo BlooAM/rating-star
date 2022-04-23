@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import './components/StarRating.js'
+import StarRating  from './components/StarRating';
+
 
 function App() {
-  return <StarRating style={{backgroundColor: "lightblue"}}/>;
+  return <StarRating />;
 }
 export default App;

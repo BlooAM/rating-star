@@ -16,7 +16,7 @@ export default function StarRating({totalStars = 5}){
                 <Star
                 key={i} 
                 selected={selectedStars > i}
-                onSelect={setSelectedStars(i+1)} 
+                onSelect={() => setSelectedStars(i+1)} 
                 />
             ))}
             <p>
