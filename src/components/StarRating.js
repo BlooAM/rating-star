@@ -8,7 +8,7 @@ const Star = ({selected = false, onSelect = f => f}) => (
     <FaStar color={selected ? "red" : "grey"} onClick={onSelect} />
 ); 
 
-export default function StarRating({ style = {}, totalStars = 5, ...props}){
+export default function StarRating({ style = {}, totalStars = 5, selectedStars = 0, ...props}){
     const [selectedStars, setSelectedStars] = useState(0);
     return (
         <div style={{ padding: "5px", ...style }} {...props}>
