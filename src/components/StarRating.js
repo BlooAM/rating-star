@@ -8,10 +8,10 @@ const Star = ({selected = false, onSelect = f => f}) => (
     <FaStar color={selected ? "red" : "grey"} onClick={onSelect} />
 ); 
 
-export default function StarRating({totalStars = 5}){
+export default function StarRating({ style = {}, totalStars = 5}){
     const [selectedStars, setSelectedStars] = useState(0);
     return (
-        <>
+        <div style={{ padding: "5px", ...style }}>
             {createArray(totalStars).map((n, i) => (
                 <Star
                 key={i} 
@@ -22,6 +22,6 @@ export default function StarRating({totalStars = 5}){
             <p>
                 {selectedStars} from {totalStars} stars
             </p>
-        </>
+        </div>
     );
 }

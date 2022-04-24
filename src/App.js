@@ -4,6 +4,6 @@ import StarRating  from './components/StarRating';
 
 
 function App() {
-  return <StarRating />;
+  return <StarRating style={{ backgroundColor: "lightblue" }}/>;
 }
 export default App;
