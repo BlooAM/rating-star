@@ -13,7 +13,7 @@ export default function AddColorForm({ onNewColor = f => f }){
     };
 
     return (
-        <from onSubmit={submit}>
+        <form onSubmit={submit}>
             <input 
              {...titleProps} 
              type='text' 
@@ -26,6 +26,6 @@ export default function AddColorForm({ onNewColor = f => f }){
              required 
             />
             <button>ADD</button>
-        </from>
+        </form>
     );
 }
