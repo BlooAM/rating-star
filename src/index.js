@@ -1,6 +1,7 @@
 import React, { createContext } from 'react';
 import { render } from 'react-dom';
 import './index.css';
+import colors from './data/color=data.json'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
