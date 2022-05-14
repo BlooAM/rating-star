@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { ColorContext } from '..';
+import { useColors } from './color-hooks';
 import Color from './Color'
 
 export default function ColorList(){
-    const { colors } = useContext(ColorContext);
+    const { colors } = useColors();
     if(!colors.length) return <div>No colors. (Add color)</div>;
     return (
         <div className="color-list">
