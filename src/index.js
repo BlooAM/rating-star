@@ -1,16 +1,16 @@
 import React, { createContext } from 'react';
 import { render } from 'react-dom';
 import './index.css';
-import colors from './data/color=data.json'
+import ColorProvider from './components/color-hooks';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 export const ColorContext = createContext();
 render(
     <React.StrictMode>
-      <ColorContext.Provider value={{ colors }}>
+      <ColorProvider>
         <App />
-      </ColorContext.Provider>
+      </ColorProvider>
     </React.StrictMode>,
     document.getElementById('root')
 );

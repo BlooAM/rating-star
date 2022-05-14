@@ -1,8 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import colorData from 'data/color=data.json';
 import { v4 } from 'uuid';
 
-const ColorContext = useContext();
+const ColorContext = createContext();
+export const useColors = () => useContext(ColorContext);
 
 export default function ColorProvider({ children }){
     const [colors, setColors] = useState(colorData);
